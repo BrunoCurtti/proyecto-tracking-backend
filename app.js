@@ -5,10 +5,12 @@ const app = express();
 const port = process.env.APP_PORT || 3004;
 // Importación de routes
 const routes = require('./routes');
+const cors = require('cors');
 
 // Le decimos a express que vamos a utilizar json para req y res.
 app.use(express.json());
 
+app.use(cors());
 // Defino mis rutas
 app.use('/', routes);
 
