@@ -24,6 +24,8 @@ exports.update = async (req, res) => {
     let figurita = {};
     if (la_tengo) {
       figurita = {...figurita, la_tengo};
+    } else {
+      figurita = {...figurita, la_tengo, cantidad:0};
     }
     if (cantidad) {
       figurita = {...figurita, cantidad};

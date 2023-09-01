@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "c687eea9-d5ec-42cd-81c5-7a82cb751106",
+		"name": "Tracking-fig",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27434077"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3004/api/figuritas/figuritas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"figuritas",
+						"figuritas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by_Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 7,\r\n        \"nombre\": \"Abradolf Lincler\",\r\n        \"categoria\": \"Human\",\r\n        \"url_foto\": \"https://rickandmortyapi.com/api/character/avatar/7.jpeg\",\r\n        \"la_tengo\": true,\r\n        \"cantidad\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/figuritas/figuritas/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"figuritas",
+						"figuritas",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCharacter_By_Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rickandmortyapi.com/api/character/10",
+					"protocol": "https",
+					"host": [
+						"rickandmortyapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"character",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "numberOfMissedFigs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3004/api/figuritas/consultar-figuritas-faltan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"figuritas",
+						"consultar-figuritas-faltan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "numberOfRepetedFigs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3004/api/figuritas/consultar-figuritas-repetidas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"figuritas",
+						"consultar-figuritas-repetidas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
